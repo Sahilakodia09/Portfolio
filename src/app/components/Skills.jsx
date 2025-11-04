@@ -4,12 +4,36 @@ import { Code2, Smartphone, Globe, Cpu, Layers, Rocket } from "lucide-react";
 
 export default function Skills() {
   const skills = [
-    { icon: <Code2 className="w-8 h-8 text-indigo-500" />, title: "Frontend Development", desc: "Building responsive UIs using React and Next.js." },
-    { icon: <Smartphone className="w-8 h-8 text-indigo-500" />, title: "React Native", desc: "Creating cross-platform mobile apps with native feel." },
-    { icon: <Globe className="w-8 h-8 text-indigo-500" />, title: "Web Design", desc: "Designing aesthetic, user-friendly web experiences." },
-    { icon: <Cpu className="w-8 h-8 text-indigo-500" />, title: "Optimization", desc: "Improving app speed and performance efficiently." },
-    { icon: <Layers className="w-8 h-8 text-indigo-500" />, title: "UI Frameworks", desc: "Proficient in Tailwind CSS, Bootstrap, design systems." },
-    { icon: <Rocket className="w-8 h-8 text-indigo-500" />, title: "Continuous Learning", desc: "Exploring new tools & frameworks regularly." },
+    { 
+      icon: <Code2 className="w-8 h-8 text-indigo-500" />, 
+      title: "React Development", 
+      desc: "Building interactive components and applications using React.js and Next.js." 
+    },
+    { 
+      icon: <Smartphone className="w-8 h-8 text-indigo-500" />, 
+      title: "Mobile Apps", 
+      desc: "Creating cross-platform mobile applications with React Native." 
+    },
+    { 
+      icon: <Globe className="w-8 h-8 text-indigo-500" />, 
+      title: "Web Fundamentals", 
+      desc: "Solid foundation in HTML, CSS, and JavaScript for building web interfaces." 
+    },
+    { 
+      icon: <Layers className="w-8 h-8 text-indigo-500" />, 
+      title: "Styling & Design", 
+      desc: "Working with Bootstrap for rapid development and learning Tailwind CSS." 
+    },
+    { 
+      icon: <Cpu className="w-8 h-8 text-indigo-500" />, 
+      title: "Clean Code", 
+      desc: "Focus on writing simple, readable, and maintainable code." 
+    },
+    { 
+      icon: <Rocket className="w-8 h-8 text-indigo-500" />, 
+      title: "Always Learning", 
+      desc: "Continuously exploring new technologies and improving my skills." 
+    },
   ];
 
   return (
@@ -23,7 +47,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Skills
+        What I Do
       </motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">

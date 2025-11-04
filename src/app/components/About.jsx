@@ -24,16 +24,13 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <p className="mb-6">
-            Hey! I’m <span className="font-semibold text-black dark:text-white">Sahil Akodiya</span>, a passionate{" "}
-            <span className="text-indigo-500">Front-end Developer</span> and{" "}
-            <span className="text-indigo-500">React Native Engineer</span>.
+            Hi there! I'm <span className="font-semibold text-black dark:text-white">Sahil Akodiya</span>, a front-end developer who loves turning ideas into clean, working code. I've been building stuff with web technologies for a while now, and honestly, I just enjoy making things that look good and work well.
           </p>
           <p className="mb-6">
-            I love crafting beautiful interfaces and seamless mobile experiences using technologies like{" "}
-            <span className="font-medium">React.js, Next.js, and React Native</span>.
+            My main tools are <span className="font-medium">React.js and React Native</span> - I use them for pretty much everything these days. For styling, I usually reach for <span className="font-medium">HTML, CSS, and Bootstrap</span> when I need to move fast, and I'm getting comfortable with <span className="font-medium">Tailwind CSS</span> too. I've also started working with <span className="font-medium">Next.js</span> for some projects and really like how it handles things.
           </p>
           <p>
-            Outside of coding, you’ll often find me at the gym, editing gaming videos, or learning something new 🚀
+            When I'm not coding, I'm usually learning new stuff or working on personal projects. I believe good code should be simple and readable, and I try to keep things straightforward in my work. Always looking to improve and take on new challenges!
           </p>
         </motion.div>
 
@@ -44,10 +41,10 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h3 className="text-lg sm:text-xl font-semibold mb-3 text-gray-900 dark:text-white">
-            Tech Stack
+            What I Work With
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-            HTML • CSS • Bootstrap • JavaScript • React • React Native • Next.js
+            React • React Native • JavaScript • HTML • CSS • Bootstrap • Next.js • Tailwind CSS
           </p>
         </motion.div>
       </div>
