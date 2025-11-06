@@ -3,22 +3,28 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "E flat Book",
+    title: "eflatbook",
     desc: "A society management app I built to digitize everything - from adding tenants and visitors to handling complaints and online rent payments. It's got real-time notifications using Firebase Cloud Messaging, and visitors can share QR codes for entry. Basically makes society life way easier.",
     img: "/images/EflatBook.jpeg",
-    link: "https://github.com/yourgithub/eflat-book",
+    link: "https://play.google.com/store/apps/details?id=com.eflatbook&pcampaignid=web_share",
   },
   {
-    title: "E flat Book Guard",
+    title: "eflatbook Guard",
     desc: "This is the guard side of the society app. Guards get real-time notifications, can translate Hindi to English with a button, allow visitors and vehicles by scanning QR codes, and check all visitor history. Built with Firebase for the real-time stuff - makes security management pretty smooth.",
     img: "/images/Guard.jpeg",
-    link: "https://github.com/yourgithub/eflat-book-guard",
+    link: "https://play.google.com/store/apps/details?id=com.eflatbook.guard&pcampaignid=web_share",
+  },
+  {
+    title: "Milan",
+    desc: "A US-based dating app where your perfect match is just a swipe away. I built it with real-time chat and notifications using Firebase, subscription plans for premium features, advanced filters to find people based on your preferences, and lots of other cool dating app features.",
+    img: "/images/milan.png",
+    link: "https://play.google.com/store/apps/details?id=com.Milan&pcampaignid=web_share",
   },
   {
     title: "Roc The Block",
     desc: "An events platform showing what's happening around American neighborhoods. You can browse events and locations, book tickets, and register directly from the app. It's all about helping people discover and join local events easily.",
-    img: "/images/roc-the-block.jpeg", // You might want to update this image
-    link: "https://github.com/yourgithub/roc-the-block",
+    img: "/images/roc-the-block.jpeg",
+    link: "https://play.google.com/store/apps/details?id=com.roctheblockinc&pcampaignid=web_share",
   },
 ];
 
@@ -43,16 +49,13 @@ export default function Portfolio() {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-gray-100 dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.03] transition-transform duration-300 flex flex-col"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2, duration: 0.5 }}
+            className="bg-gray-100 dark:bg-zinc-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-[1.03] transition-transform duration-300 flex flex-col"
           >
-            <div className="flex-1 p-4 flex items-center justify-center bg-gray-200 dark:bg-zinc-700 min-h-[200px]">
+            <div className="relative w-full h-[300px] bg-gray-200 dark:bg-zinc-700 overflow-hidden flex items-center justify-center">
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-auto max-h-[180px] object-contain rounded-lg"
+                className="w-auto h-full object-cover rounded-t-2xl transition-transform duration-500 hover:scale-105"
               />
             </div>
             <div className="p-6">

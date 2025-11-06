@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Contact Me
+        Get In Touch
       </motion.h2>
 
       {/* Subtitle */}
@@ -25,8 +25,8 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Have a project in mind or just want to say hi?  
-        Feel free to reach out — I'd love to connect!
+        I'm always open to discussing new opportunities and interesting projects. 
+        Let's create something amazing together!
       </motion.p>
 
       {/* Contact Options */}
@@ -37,68 +37,57 @@ export default function Contact() {
         transition={{ delay: 0.4, duration: 0.6 }}
       >
         <a
-          href="mailto:sahilakodiya@gmail.com"
-          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300"
+          href="tel:+919588298528"
+          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300 flex flex-col items-center"
+          aria-label="Phone"
+        >
+          <FaPhone className="text-xl sm:text-2xl text-indigo-500 mb-1" />
+          <span className="text-xs text-gray-600 dark:text-gray-400">Call</span>
+        </a>
+        <a
+          href="mailto:sahilakodiya09@gmail.com"
+          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300 flex flex-col items-center"
           aria-label="Email"
         >
-          <FaEnvelope className="text-xl sm:text-2xl text-indigo-500" />
+          <FaEnvelope className="text-xl sm:text-2xl text-indigo-500 mb-1" />
+          <span className="text-xs text-gray-600 dark:text-gray-400">Email</span>
         </a>
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/Sahilakodia09"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300"
+          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300 flex flex-col items-center"
           aria-label="GitHub"
         >
-          <FaGithub className="text-xl sm:text-2xl text-indigo-500" />
+          <FaGithub className="text-xl sm:text-2xl text-indigo-500 mb-1" />
+          <span className="text-xs text-gray-600 dark:text-gray-400">GitHub</span>
         </a>
         <a
-          href="https://linkedin.com/in/yourlinkedin"
+          href="https://www.linkedin.com/in/sahilakodiya09/"
           target="_blank"
           rel="noopener noreferrer"
-          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300"
+          className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300 flex flex-col items-center"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="text-xl sm:text-2xl text-indigo-500" />
+          <FaLinkedin className="text-xl sm:text-2xl text-indigo-500 mb-1" />
+          <span className="text-xs text-gray-600 dark:text-gray-400">LinkedIn</span>
         </a>
       </motion.div>
 
-      {/* Contact Form */}
-      <motion.form
-        className="w-full max-w-md sm:max-w-lg bg-white dark:bg-zinc-800 rounded-2xl shadow-xl p-6 sm:p-8 mx-4"
-        initial={{ opacity: 0, y: 40 }}
+      {/* Contact Details */}
+      <motion.div
+        className="text-center mb-8"
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        onSubmit={(e) => e.preventDefault()}
+        transition={{ delay: 0.5, duration: 0.6 }}
       >
-        <div className="flex flex-col gap-4 sm:gap-5">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-transparent focus:outline-none focus:border-indigo-500 text-sm sm:text-base"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-transparent focus:outline-none focus:border-indigo-500 text-sm sm:text-base"
-            required
-          />
-          <textarea
-            rows="4"
-            placeholder="Your Message"
-            className="p-3 rounded-lg border border-gray-300 dark:border-zinc-700 bg-transparent focus:outline-none focus:border-indigo-500 text-sm sm:text-base resize-none"
-            required
-          ></textarea>
-
-          <button
-            type="submit"
-            className="mt-2 bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-3 rounded-lg transition-all duration-300 text-sm sm:text-base"
-          >
-            Send Message
-          </button>
-        </div>
-      </motion.form>
+        <p className="text-gray-700 dark:text-gray-300 text-lg mb-2">
+          <strong>Phone:</strong> +91 95882 98528
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 text-lg">
+          <strong>Email:</strong> sahilakodiya09@gmail.com
+        </p>
+      </motion.div>
     </section>
   );
 }
