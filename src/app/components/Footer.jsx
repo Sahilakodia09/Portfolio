@@ -19,26 +19,26 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex gap-6">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/Sahilakodia09"
             target="_blank"
             className="text-gray-400 hover:text-indigo-500 transition"
           >
             <FaGithub className="text-2xl" />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/sahilakodiya09/"
             target="_blank"
             className="text-gray-400 hover:text-indigo-500 transition"
           >
             <FaLinkedin className="text-2xl" />
           </a>
-          <a
+          {/* <a
             href="https://instagram.com/yourinstagram"
             target="_blank"
             className="text-gray-400 hover:text-indigo-500 transition"
           >
             <FaInstagram className="text-2xl" />
-          </a>
+          </a> */}
         </div>
       </motion.div>
 

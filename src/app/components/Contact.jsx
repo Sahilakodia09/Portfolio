@@ -45,7 +45,7 @@ export default function Contact() {
           <span className="text-xs text-gray-600 dark:text-gray-400">Call</span>
         </a>
         <a
-          href="mailto:sahilakodiya09@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&to=sahilakodiya09@gmail.com"
           className="p-3 sm:p-4 bg-white dark:bg-zinc-800 rounded-full shadow hover:scale-110 transition-transform duration-300 flex flex-col items-center"
           aria-label="Email"
         >
