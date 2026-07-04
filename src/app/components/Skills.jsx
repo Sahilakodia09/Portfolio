@@ -1,38 +1,38 @@
 "use client";
 import { motion } from "framer-motion";
-import { Code2, Smartphone, Globe, Cpu, Layers, Rocket } from "lucide-react";
+import { Smartphone, Zap, Gamepad2, Layers, CreditCard, Rocket } from "lucide-react";
 
 export default function Skills() {
   const skills = [
     { 
-      icon: <Code2 className="w-8 h-8 text-indigo-500" />, 
-      title: "React Development", 
-      desc: "Building interactive components and applications using React.js and Next.js." 
-    },
-    { 
       icon: <Smartphone className="w-8 h-8 text-indigo-500" />, 
-      title: "Mobile Apps", 
-      desc: "Creating cross-platform mobile applications with React Native." 
+      title: "React Native Development", 
+      desc: "Building and shipping production Android & iOS apps with React Native - smooth UI, optimized navigation, and responsive layouts." 
     },
     { 
-      icon: <Globe className="w-8 h-8 text-indigo-500" />, 
-      title: "Web Fundamentals", 
-      desc: "Solid foundation in HTML, CSS, and JavaScript for building web interfaces." 
+      icon: <Zap className="w-8 h-8 text-indigo-500" />, 
+      title: "Real-Time Systems", 
+      desc: "Live chat, push notifications, and real-time updates using Firebase Cloud Messaging, Firestore, and Socket.IO." 
+    },
+    { 
+      icon: <Gamepad2 className="w-8 h-8 text-indigo-500" />, 
+      title: "Game & Animation", 
+      desc: "Canvas-based games and animation systems built with PixiJS and React Native Reanimated." 
     },
     { 
       icon: <Layers className="w-8 h-8 text-indigo-500" />, 
-      title: "Styling & Design", 
-      desc: "Working with Bootstrap for rapid development and learning Tailwind CSS." 
+      title: "State Management", 
+      desc: "Predictable, offline-first state using Redux Toolkit, Redux Persist, and AsyncStorage." 
     },
     { 
-      icon: <Cpu className="w-8 h-8 text-indigo-500" />, 
-      title: "Clean Code", 
-      desc: "Focus on writing simple, readable, and maintainable code." 
+      icon: <CreditCard className="w-8 h-8 text-indigo-500" />, 
+      title: "Payments & Auth", 
+      desc: "Secure in-app payments with Razorpay and Stripe, plus Firebase Authentication and Google Sign In." 
     },
     { 
       icon: <Rocket className="w-8 h-8 text-indigo-500" />, 
-      title: "Always Learning", 
-      desc: "Continuously exploring new technologies and improving my skills." 
+      title: "Release & Performance", 
+      desc: "Owning apps end-to-end through Google Play Console and App Store Connect, with a focus on performance optimization." 
     },
   ];
 

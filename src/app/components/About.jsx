@@ -24,13 +24,13 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <p className="mb-6">
-            Hi there! I'm <span className="font-semibold text-black dark:text-white">Sahil Akodiya</span>, a front-end developer who loves turning ideas into clean, working code. I've been building stuff with web technologies for a while now, and honestly, I just enjoy making things that look good and work well.
+            Hi there! I'm <span className="font-semibold text-black dark:text-white">Sahil Akodiya</span>, a Frontend & React Native Developer with 3 years of experience building and shipping production apps for Android and iOS. I've worked across society management platforms, dating apps, real-time games, and payment-driven ordering apps - and I still enjoy the moment an idea turns into clean, working code.
           </p>
           <p className="mb-6">
-            My main tools are <span className="font-medium">React.js and React Native</span> - I use them for pretty much everything these days. For styling, I usually reach for <span className="font-medium">HTML, CSS, and Bootstrap</span> when I need to move fast, and I'm getting comfortable with <span className="font-medium">Tailwind CSS</span> too. I've also started working with <span className="font-medium">Next.js</span> for some projects and really like how it handles things.
+            My core stack is <span className="font-medium">React Native and React.js</span>, backed by <span className="font-medium">Redux Toolkit, Firebase, and RESTful APIs</span> for state management and real-time features like push notifications and live chat. For game and animation-heavy work, I build with <span className="font-medium">PixiJS</span>, and for payments I integrate <span className="font-medium">Razorpay and Stripe</span>. I've taken multiple apps end-to-end - from architecture through Google Play Console and App Store Connect release.
           </p>
           <p>
-            When I'm not coding, I'm usually learning new stuff or working on personal projects. I believe good code should be simple and readable, and I try to keep things straightforward in my work. Always looking to improve and take on new challenges!
+            When I'm not shipping features, I'm usually deep in animation systems or sprite pipelines for game projects, or picking apart a tricky socket bug. I care about performance and readable code, and I'm always looking for the next hard problem to solve.
           </p>
         </motion.div>
 
@@ -44,7 +44,7 @@ export default function About() {
             What I Work With
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-            React • React Native • JavaScript • HTML • CSS • Bootstrap • Next.js • Tailwind CSS
+            React Native • React.js • PixiJS • Redux Toolkit • Firebase • Razorpay • Stripe • REST APIs • JavaScript • Tailwind CSS
           </p>
         </motion.div>
       </div>

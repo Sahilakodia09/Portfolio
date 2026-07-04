@@ -36,6 +36,7 @@ export default function Navbar() {
 
   const navItems = [
     { id: "about", label: "About me" },
+    { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "portfolio", label: "Projects" },
     { id: "contact", label: "Contact Me" },

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -13,7 +13,7 @@ export default function Hero() {
         <motion.img
           src="/images/sahil.png"
           alt="Sahil Akodiya"
-          className="object-cover w-full md:w-[80%] h-[70vh] md:h-[80%] rounded-none md:rounded-2xl"
+          className="object-cover object-top w-full md:w-[80%] h-[70vh] md:h-[80%] rounded-none md:rounded-2xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -23,11 +23,14 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 w-full bg-black/70 px-6 py-6 md:hidden">
           <h3 className="text-sm text-gray-300">Hi, I am</h3>
           <h1 className="text-2xl font-bold">Sahil Akodiya</h1>
-          <h2 className="text-sm text-gray-400 mb-4">
-            Front-end Developer / React Native Dev
+          <h2 className="text-sm text-gray-400 mb-1">
+            React Native Developer
           </h2>
+          <p className="text-xs text-gray-400 mb-4">
+            3 Years &middot; 10+ Production Apps &middot; Android &amp; iOS
+          </p>
 
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap gap-3">
             <a
               href="https://mail.google.com/mail/?view=cm&to=sahilakodiya09@gmail.com"
               target="_blank"
@@ -51,6 +54,14 @@ export default function Hero() {
               className="p-2 bg-white text-black rounded-full shadow hover:scale-110 transition-transform duration-300"
             >
               <FaLinkedin className="text-lg" />
+            </a>
+            <a
+              href="/images/Sahil_Akodiya_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-indigo-500 text-white rounded-full shadow hover:scale-105 transition-transform duration-300 text-sm font-medium"
+            >
+              <FaFileDownload className="text-base" /> Resume
             </a>
           </div>
         </div>
@@ -77,16 +88,25 @@ export default function Hero() {
         </motion.h1>
 
         <motion.h2
-          className="text-gray-600 text-xl mb-8"
+          className="text-gray-600 text-xl mb-2"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Front-end Developer / React Native Dev
+          React Native Developer
         </motion.h2>
 
+        <motion.p
+          className="text-gray-500 text-sm mb-8 tracking-wide"
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          3 Years Experience &middot; 10+ Production Apps &middot; Android &amp; iOS
+        </motion.p>
+
         <motion.div
-          className="flex space-x-4"
+          className="flex flex-wrap items-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
@@ -114,6 +134,14 @@ export default function Hero() {
             className="p-3 bg-white rounded-lg shadow hover:scale-110 transition-transform duration-300"
           >
             <FaLinkedin className="text-xl" />
+          </a>
+          <a
+            href="/images/Sahil_Akodiya_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-3 bg-indigo-500 text-white rounded-lg shadow hover:scale-105 hover:bg-indigo-600 transition-all duration-300 font-medium"
+          >
+            <FaFileDownload /> Download Resume
           </a>
         </motion.div>
       </div>
