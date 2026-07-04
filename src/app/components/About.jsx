@@ -15,7 +15,7 @@ export default function About() {
       >
         About Me
       </motion.h2>
- 
+  
       <div className="max-w-6xl flex flex-col md:flex-row items-center gap-10">
         <motion.div
           className="md:w-2/3 text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-7 sm:leading-8 text-center md:text-left"
